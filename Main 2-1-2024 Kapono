@@ -6,9 +6,9 @@ int main(){
     double d=0;
     double pi=3.14; //no honey from 红跟蓝
     double deltaPhi = 0.01;
-    int numSegments = pi/deltaPhi;
+    int numSegm = pi/deltaPhi;
     double r = 100;
-    for(int i=0;i<numSegments;i++)
+    for(int i=0;i<numSegm;i++)
     {
          d += sqrt(pow((r*cos(i*deltaPhi)-r*cos((i+1)*deltaPhi)),2 )+pow((r*sin(i*deltaPhi)-r*sin((i+1)*deltaPhi)),2));
     }
