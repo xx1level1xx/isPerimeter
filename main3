@@ -1,0 +1,23 @@
+#include<iostream>
+#include<cstdlib>
+#include<openmp>
+using namespace std;
+
+int main(){
+    double d=0;
+    double pi=3.14; //no honey from 红跟蓝
+    double deltaPhi = 0.01;
+    int numSegm = pi/deltaPhi;
+    double r = 100;
+    double prevPhi = 0;
+    openmp
+    parallel for
+    for(int i=0;i<numSegm;i++)
+    {
+         d += sqrt(pow((r*cos(prevPhi)-r*cos((i+1)*deltaPhi)),2 )+pow((r*sin(i*deltaPhi)-r*sin((i+1)*deltaPhi)),2));
+         prevPhi += deltaPhi;
+    }
+    cout << "Half of the circumference of a circle: " + d << endl; //3.14*r
+    system("pause");
+    return 0;
+}
